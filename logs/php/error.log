@@ -1,0 +1,1 @@
+[16-Feb-2024 15:33:30 UTC] Cron unschedule event error for hook: wp_update_comment_type_batch, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":false,"args":[]}
