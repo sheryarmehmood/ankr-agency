@@ -6,307 +6,39 @@ get_header();
 
 <main id="primary" class="site-main">
 
+<?php
+get_template_part('template-parts/home-page/home-hero', 'page');
+?>
 
-<!-- Include and echo the hero module template part -->
-<section class="hero"
-    style="background-image: url('https://ankragency.com/wp-content/uploads/2023/09/hero-bg.jpg')">
-    <div class="container">
-        <div class="inner">
-            <div class="hero__text">
-                <h1>
-                    <p>Meet Your <i>NEW</i><br />
-                        Digital Marketing Agency</p>
-                    <!-- Output the hero text -->
-                </h1>
-                <div class="description">
-                    <p>Get <strong>real-time</strong> results from your team of marketing experts.</p>
-                    <!-- Output the hero description -->
-                </div>
-                <a href="#contactUs-section" class="btn">
-                    Begin Today
-                    <!-- Output the hero button title -->
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
+<?php
+get_template_part('template-parts/home-page/home-about', 'page');
+?>
+
+<?php
+get_template_part('template-parts/home-page/home-services', 'page');
+?>
+
+<?php
+get_template_part('template-parts/home-page/home-projects', 'page');
+?>
+
+
+
+
+
+
 
 <!-- Include and echo the about note module template part -->
-<section class="about__note" id="about_us_section">
-    <!-- Start a new section with a CSS class 'about__note' -->
-    <div class="container">
-        <!-- Create a container div -->
-        <div class="inner">
-            <!-- Create an inner div -->
-            <div class="sec__head">
-                <!-- Create a section header div -->
-                <div class="sec__head--title">
-                    <!-- Create a div for the section title -->
-                    <h2>
-                        <p>about <strong>ankr</strong></p>
-                    </h2> <!-- Output the 'about_note_title' within an h2 element -->
-                    <span class="sec__head--title-arc"></span> <!-- Create a decorative span element -->
-                </div>
-                <div class="sec__head--headline">
-                    <!-- Create a div for the section headline -->
-                    <p>At ANKR, our goal is simple: <strong>drive ROI</strong> for our clients. For years,
-                        we&#8217;ve meticulously crafted strategies that translate into tangible business
-                        outcomes. Every digital campaign, every web page, is designed to turn visitors into
-                        <strong>loyal customers</strong>.</p>
-                    <!-- Output the 'about_note_headline' -->
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+
 
 <!-- Include and echo the about banner module template part -->
-<section class="about__banner">
-    <!-- Start a new section with a CSS class 'about__banner' -->
-    <div class="about__banner--bg"
-        style="background-image: url('https://ankragency.com/wp-content/uploads/2023/09/about-banner.jpg')">
-        <!-- Create a div for the background image with inline CSS -->
-    </div>
-    <div class="container">
-        <!-- Create a container div -->
-        <div class="inner">
-            <!-- Create an inner div -->
-            <h2>Focused on Results <br> Driven by Performance.</h2>
-            <!-- Output the 'about_banner_title' within an h2 element -->
-        </div>
-    </div>
-</section>
+
 
 <!-- Include and echo the Service module template part -->
-<section class="services" id="services-section">
-    <div class="container">
-        <div class="inner">
-            <div class="sec__head">
-                <div class="sec__head--title">
-                    <h2>
-                        <p>Our <strong>Services</strong></p>
-                    </h2>
-                    <span class="sec__head--title-arc"></span>
-                </div>
-                <div class="sec__head--headline">
-                    <p>Want a better return on your online investment? That&#8217;s where we come in. We
-                        help you get noticed on search engines, create posts that your audience loves, and
-                        build websites that make visitors want to stay. With our data tools, we make sure
-                        everything is working like it should.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="services__list">
-        <div class="service">
-            <div class="service__image">
-                <img width="150" height="71"
-                    src="https://ankragency.com/wp-content/uploads/2023/09/social-media-service.jpg"
-                    class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async" />
-            </div>
-            <div class="service__title">
-                <h3>
-                    Social Media </h3>
-            </div>
-        </div>
-        <div class="service">
-            <div class="service__image">
-                <img width="150" height="116"
-                    src="https://ankragency.com/wp-content/uploads/2023/09/google-ads-service.jpg"
-                    class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async" />
-            </div>
-            <div class="service__title">
-                <h3>
-                    Google Ads </h3>
-            </div>
-        </div>
-        <div class="service">
-            <div class="service__image">
-                <img width="150" height="84"
-                    src="https://ankragency.com/wp-content/uploads/2023/09/seo-service.jpg"
-                    class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async" />
-            </div>
-            <div class="service__title">
-                <h3>
-                    SEO </h3>
-            </div>
-        </div>
-        <div class="service">
-            <div class="service__image">
-                <img width="150" height="84"
-                    src="https://ankragency.com/wp-content/uploads/2023/09/marketing-service.jpg"
-                    class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async"
-                    loading="lazy" /> </div>
-            <div class="service__title">
-                <h3>
-                    Marketing </h3>
-            </div>
-        </div>
-        <div class="service">
-            <div class="service__image">
-                <img width="150" height="100"
-                    src="https://ankragency.com/wp-content/uploads/2023/09/video-production-service.jpg"
-                    class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async"
-                    loading="lazy" /> </div>
-            <div class="service__title">
-                <h3>
-                    Video Production </h3>
-            </div>
-        </div>
-        <div class="service">
-            <div class="service__image">
-                <img width="150" height="100"
-                    src="https://ankragency.com/wp-content/uploads/2023/09/photography-service.jpg"
-                    class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async"
-                    loading="lazy" /> </div>
-            <div class="service__title">
-                <h3>
-                    Photography </h3>
-            </div>
-        </div>
-        <div class="service">
-            <div class="service__image">
-                <img width="150" height="100"
-                    src="https://ankragency.com/wp-content/uploads/2023/09/website-building-service.jpg"
-                    class="attachment-thumbnail size-thumbnail wp-post-image" alt="" decoding="async"
-                    loading="lazy" /> </div>
-            <div class="service__title">
-                <h3>
-                    Website Building </h3>
-            </div>
-        </div>
-    </div>
-</section>
+
 
 <!-- Include and echo the Video gallery module template part -->
-<section class="video__gallery">
-    <div class="container">
-        <div class="inner">
-            <div class="sec__head">
-                <div class="sec__head--title">
-                    <h2>
-                        <p>Discover Our Projects</p>
-                        <!-- Display the video gallery title -->
-                    </h2>
-                    <span class="sec__head--title-arc"></span>
-                </div>
-                <div class="sec__head--headline">
-                    <p>At ANKR Agency, we love what we do, and it shows in our projects. Dive into a curated
-                        selection of our creative and impactful work, offering insights into the projects
-                        that have brought brands to life. Whether you&#8217;re a potential client seeking
-                        inspiration or a future team member eager to join our journey, this section provides
-                        a window into our passion for videography, web development, social media content
-                        marketing, and search advertising.</p>
-                    <!-- Display the video gallery description -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="swiper video__gallery--slider">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide slide">
-                <div class="slide__thumbnail">
-                    <a href="">
-                        <p><iframe loading="lazy" width="560" height="315"
-                                src="https://www.youtube.com/embed/1ERIfiyhZ-A?si=5C7VzZxf9cdHPD0c"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe></p>
-                        <!-- Display the video gallery slide thumbnail -->
-                    </a>
-                </div>
-            </div>
-            <div class="swiper-slide slide">
-                <div class="slide__thumbnail">
-                    <a href="">
-                        <p><iframe loading="lazy" width="560" height="315"
-                                src="https://www.youtube.com/embed/TYKMINior6U?si=hRiXyiTx6lFKHBnl"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe></p>
-                        <!-- Display the video gallery slide thumbnail -->
-                    </a>
-                </div>
-            </div>
-            <div class="swiper-slide slide">
-                <div class="slide__thumbnail">
-                    <a href="">
-                        <p><iframe loading="lazy" width="560" height="315"
-                                src="https://www.youtube.com/embed/SWMkJP9Y2lk?si=jZqVijmSCOwlymIL"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe></p>
-                        <!-- Display the video gallery slide thumbnail -->
-                    </a>
-                </div>
-            </div>
-            <div class="swiper-slide slide">
-                <div class="slide__thumbnail">
-                    <a href="">
-                        <p><iframe loading="lazy" width="560" height="315"
-                                src="https://www.youtube.com/embed/jQZVIr_dCJ8?si=2G5vmxDSgenNA57M"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe></p>
-                        <!-- Display the video gallery slide thumbnail -->
-                    </a>
-                </div>
-            </div>
-            <div class="swiper-slide slide">
-                <div class="slide__thumbnail">
-                    <a href="">
-                        <p><iframe loading="lazy" width="560" height="315"
-                                src="https://www.youtube.com/embed/0pNZk2AQRdU?si=lsOdn6F2C5B5Z2ug"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe></p>
-                        <!-- Display the video gallery slide thumbnail -->
-                    </a>
-                </div>
-            </div>
-            <div class="swiper-slide slide">
-                <div class="slide__thumbnail">
-                    <a href="">
-                        <p><iframe loading="lazy" width="560" height="315"
-                                src="https://www.youtube.com/embed/qjbAZakNMRY?si=Ro4PISdqWaszP-ar"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe></p>
-                        <!-- Display the video gallery slide thumbnail -->
-                    </a>
-                </div>
-            </div>
-            <div class="swiper-slide slide">
-                <div class="slide__thumbnail">
-                    <a href="">
-                        <p><iframe loading="lazy" width="560" height="315"
-                                src="https://www.youtube.com/embed/d_nDS7ci-dk?si=PSrt1tRIm8BiGDa7"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe></p>
-                        <!-- Display the video gallery slide thumbnail -->
-                    </a>
-                </div>
-            </div>
-            <div class="swiper-slide slide">
-                <div class="slide__thumbnail">
-                    <a href="">
-                        <p><iframe loading="lazy" width="560" height="315"
-                                src="https://www.youtube.com/embed/T2svIraCogs?si=gjuzYMy4-DTbbMzm"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe></p>
-                        <!-- Display the video gallery slide thumbnail -->
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="swiper__nav">
-            <div class="nav__btn swiper-button-prev"></div>
-            <div class="nav__btn swiper-button-next"></div>
-        </div>
-    </div>
-</section> <!-- End of the video gallery section -->
+ <!-- End of the video gallery section -->
 
 <!-- Include and echo the testimonial module template part -->
 <section class="testimonials">

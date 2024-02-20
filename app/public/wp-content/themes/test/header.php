@@ -682,10 +682,10 @@
                                 fetchpriority="high" /></a> </div>
                                 
                          
-                    
+                                <?php wp_nav_menu(array('theme_location' => 'menu-1')); ?>
 
                     <!-- desktop menu -->
-                    <nav id="site-navigation" class="navbar__wrap d-lg-block d-none">
+                    <!-- <nav id="site-navigation" class="navbar__wrap d-lg-block d-none">
                         <div class="menu-header-menu-container">
                             <ul id="primary-menu" class="menu">
                                 <li id="menu-item-74"
@@ -702,7 +702,7 @@
                                         href="#contactUs-section">Contact Us</a></li>
                             </ul>
                         </div>
-                    </nav>
+                    </nav> -->
 
                     <div class="header__cta d-lg-block d-none">
                         <a href="#contactUs-section" class="header__cta--btn btn">SCHEDULE STRATEGY SESSION</a>
