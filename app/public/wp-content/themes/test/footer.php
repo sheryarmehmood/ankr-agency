@@ -61,7 +61,47 @@
 				?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
+
+
 </div><!-- #page -->
+
+<script src='https://ankragency.com/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.8.1'
+            id='swv-js'></script>
+        <script id='contact-form-7-js-extra'>
+            var wpcf7 = {
+                "api": {
+                    "root": "https:\/\/ankragency.com\/wp-json\/",
+                    "namespace": "contact-form-7\/v1"
+                },
+                "cached": "1"
+            };
+        </script>
+        <script src='https://ankragency.com/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.8.1'
+            id='contact-form-7-js'></script>
+        <script src='https://ankragency.com/wp-content/themes/urban_insight/js/custom.js?ver=1.0.0' id='custom_js-js'>
+        </script>
+        <script src='https://ankragency.com/wp-content/themes/urban_insight/js/navigation.js?ver=1.0.0'
+            id='urban_insight-navigation-js'></script>
+        <script
+            src='https://www.google.com/recaptcha/api.js?render=6LdlEasoAAAAAOEce4-Bh4N4jIPuuXdLnklnUXE7&#038;ver=3.0'
+            id='google-recaptcha-js'></script>
+        <script src='https://ankragency.com/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2'
+            id='wp-polyfill-inert-js'></script>
+        <script src='https://ankragency.com/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.11'
+            id='regenerator-runtime-js'></script>
+        <script src='https://ankragency.com/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0'
+            id='wp-polyfill-js'></script>
+        <script id='wpcf7-recaptcha-js-extra'>
+            var wpcf7_recaptcha = {
+                "sitekey": "6LdlEasoAAAAAOEce4-Bh4N4jIPuuXdLnklnUXE7",
+                "actions": {
+                    "homepage": "homepage",
+                    "contactform": "contactform"
+                }
+            };
+        </script>
+        <script src='https://ankragency.com/wp-content/plugins/contact-form-7/modules/recaptcha/index.js?ver=5.8.1'
+            id='wpcf7-recaptcha-js'></script>
 
 <?php wp_footer(); ?>
 
