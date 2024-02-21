@@ -38,7 +38,7 @@
                         </p>
                     </div>
                     <h5 class="testimonial__card--title">
-                        Derek Walker </h5>
+                    <?php echo get_field('testimonial_title'); ?> </h5>
                 </div>
             </div>
             <!-- End HTML markup for a single testimonial slide -->
