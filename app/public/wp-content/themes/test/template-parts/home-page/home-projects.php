@@ -4,18 +4,20 @@
             <div class="sec__head">
                 <div class="sec__head--title">
                     <h2>
-                        <p>Discover Our Projects</p>
+                        <!-- <p>Discover Our Projects</p> -->
+                        <p><?php echo get_field('projects_heading'); ?></p>
                         <!-- Display the video gallery title -->
                     </h2>
                     <span class="sec__head--title-arc"></span>
                 </div>
                 <div class="sec__head--headline">
-                    <p>At ANKR Agency, we love what we do, and it shows in our projects. Dive into a curated
+                    <p><?php echo get_field('projects_headline'); ?></p>
+                    <!-- <p>At ANKR Agency, we love what we do, and it shows in our projects. Dive into a curated
                         selection of our creative and impactful work, offering insights into the projects
                         that have brought brands to life. Whether you&#8217;re a potential client seeking
                         inspiration or a future team member eager to join our journey, this section provides
                         a window into our passion for videography, web development, social media content
-                        marketing, and search advertising.</p>
+                        marketing, and search advertising.</p> -->
                     <!-- Display the video gallery description -->
                 </div>
             </div>
@@ -23,18 +25,7 @@
     </div>
     <div class="swiper video__gallery--slider">
         <div class="swiper-wrapper">
-            <div class="swiper-slide slide">
-                <div class="slide__thumbnail">
-                    <a href="">
-                        <p><iframe loading="lazy" width="560" height="315"
-                                src="https://www.youtube.com/embed/1ERIfiyhZ-A?si=5C7VzZxf9cdHPD0c"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe></p>
-                        <!-- Display the video gallery slide thumbnail -->
-                    </a>
-                </div>
-            </div>
+        
             <div class="swiper-slide slide">
                 <div class="slide__thumbnail">
                     <a href="">
