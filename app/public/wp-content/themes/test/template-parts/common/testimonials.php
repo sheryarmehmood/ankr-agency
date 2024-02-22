@@ -20,7 +20,6 @@
             <?php
             // Get the repeater field values
             $testimonial_cards = get_field('testimonial_cards');
-
             foreach ($testimonial_cards as $testimonial_card)
             {
                 $testimonial_title = $testimonial_card['testimonial_title'];
