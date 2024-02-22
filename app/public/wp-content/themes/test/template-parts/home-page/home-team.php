@@ -39,45 +39,7 @@
                     </div>
                     <?php 
                 } ?>
-                    <!-- <div class="col-lg-6">
-                    <div class="member">
-                        <div class="member__image">
-                            <img width="150" height="150"
-                                src="https://ankragency.com/wp-content/uploads/2023/09/Victor_ANKR.jpg"
-                                class="attachment-thumbnail size-thumbnail wp-post-image" alt=""
-                                decoding="async" loading="lazy" /> </div>
-                        <h4 class="member__title">
-                            VICTOR ANAYA </h4>
-                        <h5 class="member__designation">
-                            SOCIAL MEDIA STRATEGIST </h5>
-                    </div>
-                </div> -->
-                <!-- <div class="col-lg-6">
-                    <div class="member">
-                        <div class="member__image">
-                            <img width="150" height="150"
-                                src="https://ankragency.com/wp-content/uploads/2023/09/Blaine_ANKR.jpg"
-                                class="attachment-thumbnail size-thumbnail wp-post-image" alt=""
-                                decoding="async" loading="lazy" /> </div>
-                        <h4 class="member__title">
-                            BLAINE HURTADO </h4>
-                        <h5 class="member__designation">
-                            DIRECTOR OF SEARCH MARKETING </h5>
-                    </div>
-                </div> -->
-                <!-- <div class="col-lg-6">
-                    <div class="member">
-                        <div class="member__image">
-                            <img width="150" height="150"
-                                src="https://ankragency.com/wp-content/uploads/2023/09/Brandon_ANKR.jpg"
-                                class="attachment-thumbnail size-thumbnail wp-post-image" alt=""
-                                decoding="async" loading="lazy" /> </div>
-                        <h4 class="member__title">
-                            BRANDON HURTADO </h4>
-                        <h5 class="member__designation">
-                            PRESIDENT </h5>
-                    </div>
-                </div> -->
+                   
             </div>
         </div>
     </div>

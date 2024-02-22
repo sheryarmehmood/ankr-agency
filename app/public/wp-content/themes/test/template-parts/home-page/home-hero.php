@@ -5,12 +5,12 @@
         <div class="inner">
             <div class="hero__text">
                 <h1>
-                    <P><p><?php echo get_field('hero_title_one'); ?> <i><?php echo get_field('hero_title_two'); ?></i><br />
+                    <p><?php echo get_field('hero_title_one'); ?> <i><?php echo get_field('hero_title_two'); ?></i><br />
                     <?php echo get_field('hero_title_three'); ?></p>
                     <!-- Output the hero text--->
                 </h1>
                 <div class="description">
-                    <P><?php echo get_field('hero_description'); ?></p></P>
+                    <P><?php echo get_field('hero_description'); ?></p>
                 </div>
                 <?php
                     // Get the hero button field (which returns an array)
