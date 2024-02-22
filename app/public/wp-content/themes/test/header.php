@@ -682,27 +682,21 @@
                                 fetchpriority="high" /></a> </div>
                                 
                          
-                                <?php wp_nav_menu(array('theme_location' => 'menu-1')); ?>
+                                
 
                     <!-- desktop menu -->
-                    <!-- <nav id="site-navigation" class="navbar__wrap d-lg-block d-none">
+                    <nav id="site-navigation" class="navbar__wrap d-lg-block d-none">
                         <div class="menu-header-menu-container">
-                            <ul id="primary-menu" class="menu">
-                                <li id="menu-item-74"
-                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-74"><a
-                                        href="#home">Home</a></li>
-                                <li id="menu-item-75"
-                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-75"><a
-                                        href="#about_us_section">About Us</a></li>
-                                <li id="menu-item-76"
-                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-76"><a
-                                        href="#services-section">Services</a></li>
-                                <li id="menu-item-77"
-                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-77"><a
-                                        href="#contactUs-section">Contact Us</a></li>
+
+                            
+                            <ul id="primary-menu" class="menu">  
+                                <li
+                                    class="menu-item menu-item-type-custom menu-item-object-custom">
+                                        <?php wp_nav_menu(array('theme_location' => 'menu-1')); ?>
+                                    </li>
                             </ul>
                         </div>
-                    </nav> -->
+                    </nav>
 
                     <div class="header__cta d-lg-block d-none">
                         <a href="#contactUs-section" class="header__cta--btn btn">SCHEDULE STRATEGY SESSION</a>
@@ -717,7 +711,7 @@
             </div>
 
             <!-- mobile menu -->
-            <!-- <nav id="mobile__menu" class="mob__menu d-lg-none">
+            <nav id="mobile__menu" class="mob__menu d-lg-none">
                 <div class="container text-center">
                     <div class="menu-header-menu-container">
                         <ul id="primary-menu" class="menu">
@@ -736,6 +730,6 @@
                     </div>
 
                 </div>
-            </nav> -->
+            </nav>
 
         </header><!-- #masthead -->
