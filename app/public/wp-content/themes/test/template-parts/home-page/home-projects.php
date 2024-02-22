@@ -11,14 +11,7 @@
                     <span class="sec__head--title-arc"></span>
                 </div>
                 <div class="sec__head--headline">
-                    <p><?php echo get_field('projects_headline'); ?></p>
-                    <!-- <p>At ANKR Agency, we love what we do, and it shows in our projects. Dive into a curated
-                        selection of our creative and impactful work, offering insights into the projects
-                        that have brought brands to life. Whether you&#8217;re a potential client seeking
-                        inspiration or a future team member eager to join our journey, this section provides
-                        a window into our passion for videography, web development, social media content
-                        marketing, and search advertising.</p> -->
-                    <!-- Display the video gallery description -->
+                    <p><?php echo get_field('projects_headline'); ?></p>    
                 </div>
             </div>
         </div>

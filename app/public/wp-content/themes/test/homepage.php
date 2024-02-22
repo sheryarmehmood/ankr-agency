@@ -16,7 +16,7 @@ get_template_part('template-parts/common/services', 'page');
 
 get_template_part('template-parts/home-page/home-projects', 'page');
 
-get_template_part('template-parts/home-page/home-testimonials', 'page');
+get_template_part('template-parts/common/testimonials', 'page');
 
 get_template_part('template-parts/home-page/home-team', 'page');
 
