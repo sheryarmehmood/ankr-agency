@@ -3,7 +3,8 @@
     <div class="container">
         <div class="inner">
             <h2 class="section__heading">
-                <p>Want Better Online Results? <strong>Connect with Us.</strong></p>
+             <p><?php echo get_field('contact_us_heading_one'); ?></p>
+                <!-- <p>Want Better Online Results? <strong>Connect with Us.</strong></p> -->
             </h2>
             <div class="row contact__us--form--content m-0">
                 <div class="col-lg-4 single">
@@ -13,16 +14,17 @@
                                 alt="Form Image">
                         </div>
                         <div class="description">
-                            <p>Ready to see <strong>real results</strong> from your digital efforts? Drop us
+                            <p><?php echo get_field('contact_us_description'); ?></p>
+                            <!-- <p>Ready to see <strong>real results</strong> from your digital efforts? Drop us
                                 a line. We&#8217;ve been helping businesses succeed online for years, and we
-                                can&#8217;t wait to help yours.</p>
+                                can&#8217;t wait to help yours.</p> -->
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-8 single">
                     <div class="contact__us--form">
                         <h3>
-                            Contact Us </h3>
+                        <?php echo get_field('contact_us_form_heading'); ?> </h3>
 
                         <div class="wpcf7 no-js" id="wpcf7-f177-p5-o1" lang="en-US" dir="ltr">
                             <div class="screen-reader-response">
