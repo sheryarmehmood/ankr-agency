@@ -5,25 +5,35 @@
                 <div class="sec__head--title">
                     <h2>
                         <!-- <p>Discover Our Projects</p> -->
-                        <p><?php echo get_field('projects_heading'); ?></p>
+                        <?php echo get_field('projects_heading'); ?>
                         <!-- Display the video gallery title -->
                     </h2>
                     <span class="sec__head--title-arc"></span>
                 </div>
                 <div class="sec__head--headline">
-                    <p><?php echo get_field('projects_headline'); ?></p>    
+                    <?php echo get_field('projects_headline'); ?>    
                 </div>
             </div>
         </div>
     </div>
+
+
+
     <div class="swiper video__gallery--slider">
         <div class="swiper-wrapper">
+            <?php
+            // Get the repeater field values
+            $projects_videos = get_field('projects_videos');
+            foreach ($projects_videos as $project_video)
+            {
+                $url = $project_video['url'];  
+                ?>
         
             <div class="swiper-slide slide">
                 <div class="slide__thumbnail">
                     <a href="">
                         <p><iframe loading="lazy" width="560" height="315"
-                                src="https://www.youtube.com/embed/TYKMINior6U?si=hRiXyiTx6lFKHBnl"
+                                src="<?php echo $url ?>"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 allowfullscreen></iframe></p>
@@ -31,78 +41,9 @@
                     </a>
                 </div>
             </div>
-            <div class="swiper-slide slide">
-                <div class="slide__thumbnail">
-                    <a href="">
-                        <p><iframe loading="lazy" width="560" height="315"
-                                src="https://www.youtube.com/embed/SWMkJP9Y2lk?si=jZqVijmSCOwlymIL"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe></p>
-                        <!-- Display the video gallery slide thumbnail -->
-                    </a>
-                </div>
-            </div>
-            <div class="swiper-slide slide">
-                <div class="slide__thumbnail">
-                    <a href="">
-                        <p><iframe loading="lazy" width="560" height="315"
-                                src="https://www.youtube.com/embed/jQZVIr_dCJ8?si=2G5vmxDSgenNA57M"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe></p>
-                        <!-- Display the video gallery slide thumbnail -->
-                    </a>
-                </div>
-            </div>
-            <div class="swiper-slide slide">
-                <div class="slide__thumbnail">
-                    <a href="">
-                        <p><iframe loading="lazy" width="560" height="315"
-                                src="https://www.youtube.com/embed/0pNZk2AQRdU?si=lsOdn6F2C5B5Z2ug"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe></p>
-                        <!-- Display the video gallery slide thumbnail -->
-                    </a>
-                </div>
-            </div>
-            <div class="swiper-slide slide">
-                <div class="slide__thumbnail">
-                    <a href="">
-                        <p><iframe loading="lazy" width="560" height="315"
-                                src="https://www.youtube.com/embed/qjbAZakNMRY?si=Ro4PISdqWaszP-ar"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe></p>
-                        <!-- Display the video gallery slide thumbnail -->
-                    </a>
-                </div>
-            </div>
-            <div class="swiper-slide slide">
-                <div class="slide__thumbnail">
-                    <a href="">
-                        <p><iframe loading="lazy" width="560" height="315"
-                                src="https://www.youtube.com/embed/d_nDS7ci-dk?si=PSrt1tRIm8BiGDa7"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe></p>
-                        <!-- Display the video gallery slide thumbnail -->
-                    </a>
-                </div>
-            </div>
-            <div class="swiper-slide slide">
-                <div class="slide__thumbnail">
-                    <a href="">
-                        <p><iframe loading="lazy" width="560" height="315"
-                                src="https://www.youtube.com/embed/T2svIraCogs?si=gjuzYMy4-DTbbMzm"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe></p>
-                        <!-- Display the video gallery slide thumbnail -->
-                    </a>
-                </div>
-            </div>
+
+            <?php 
+            } ?>
         </div>
         <div class="swiper__nav">
             <div class="nav__btn swiper-button-prev"></div>
