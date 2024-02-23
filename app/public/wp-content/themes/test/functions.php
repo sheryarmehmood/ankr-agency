@@ -182,3 +182,31 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
+
+
+
+
+//custom block registration
+
+add_action( 'acf/init', 'ankr_agency_custom_blocks' );
+function ankr_agency_custom_blocks() {
+	/*check function exists*/
+	if ( function_exists( 'acf_register_block' ) ) {
+		/* New redesign blocks*/
+		acf_register_block( array(
+			'name'            => 'hero-block',
+			'title'           => __( 'Hero block' ),
+			'description'     => __( 'FHRC Hero Section' ),
+			'render_template' => '/template-parts/home-page/home-about.php',
+			'enqueue_assets'  => function () {
+				// assetEnqueue( 'home-hero-block-style', '/redesign/blocks/home-hero-block/home-hero-block.css', true, false );
+				// assetEnqueue( 'home-hero-block-script', '/redesign/blocks/home-hero-block/home-hero-block.js', true, false );
+			},
+			'category'        => 'blocks',
+			'icon'            => 'welcome-add-page',
+			'keywords'        => array( 'heroblock', 'hero', '' ),
+			'multiple'        => true,
+			'mode'            => 'edit',
+		) );
+}
+}

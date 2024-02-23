@@ -21,6 +21,9 @@ get_template_part('template-parts/common/testimonials', 'page');
 get_template_part('template-parts/home-page/home-team', 'page');
 
 get_template_part('template-parts/home-page/home-contact', 'page');
+
+// the_content();
+
 ?>
 
 
