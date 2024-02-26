@@ -210,3 +210,81 @@ function ankr_agency_custom_blocks() {
 		) );
 }
 }
+
+
+
+class Social_Icons_Widget extends WP_Widget {
+
+    // Constructor
+    function __construct() {
+        parent::__construct(
+            'social_icons_widget', // Base ID
+            __('Social Icons Widget', 'text_domain'), // Name
+            array( 'description' => __( 'A widget to display social icons', 'text_domain' ), ) // Args
+        );
+    }
+
+    // Widget Frontend
+    public function widget( $args, $instance ) {
+        echo $args['before_widget'];
+        ?>
+        <div class="footer__social">
+            <a href="" class="footer__site--logo">
+                <img src="https://ankragency.com/wp-content/themes/urban_insight/assets/images/logo-white.png"
+                    alt="">
+            </a>
+            <!-- <h6>Follow us</h6> -->
+            <div class="footer__social--links">
+                <a href="<?php echo esc_url( $instance['facebook_url'] ); ?>" class="fa-brands fa-square-facebook"></a>
+                <a href="<?php echo esc_url( $instance['youtube_url'] ); ?>" class="fa-brands fa-youtube"></a>
+                <a href="<?php echo esc_url( $instance['twitter_url'] ); ?>" class="fa-brands fa-twitter"></a>
+                <a href="<?php echo esc_url( $instance['instagram_url'] ); ?>" class="fa-brands fa-instagram"></a>
+            </div>
+        </div>
+        <?php
+        echo $args['after_widget'];
+    }
+
+    // Widget Backend
+    public function form( $instance ) {
+        // Widget form fields
+        $facebook_url = ! empty( $instance['facebook_url'] ) ? $instance['facebook_url'] : '';
+        $youtube_url = ! empty( $instance['youtube_url'] ) ? $instance['youtube_url'] : '';
+        $twitter_url = ! empty( $instance['twitter_url'] ) ? $instance['twitter_url'] : '';
+        $instagram_url = ! empty( $instance['instagram_url'] ) ? $instance['instagram_url'] : '';
+        ?>
+        <p>
+            <label for="<?php echo $this->get_field_id( 'facebook_url' ); ?>">Facebook URL:</label>
+            <input class="widefat" id="<?php echo $this->get_field_id( 'facebook_url' ); ?>" name="<?php echo $this->get_field_name( 'facebook_url' ); ?>" type="text" value="<?php echo esc_attr( $facebook_url ); ?>">
+        </p>
+        <p>
+            <label for="<?php echo $this->get_field_id( 'youtube_url' ); ?>">YouTube URL:</label>
+            <input class="widefat" id="<?php echo $this->get_field_id( 'youtube_url' ); ?>" name="<?php echo $this->get_field_name( 'youtube_url' ); ?>" type="text" value="<?php echo esc_attr( $youtube_url ); ?>">
+        </p>
+        <p>
+            <label for="<?php echo $this->get_field_id( 'twitter_url' ); ?>">Twitter URL:</label>
+            <input class="widefat" id="<?php echo $this->get_field_id( 'twitter_url' ); ?>" name="<?php echo $this->get_field_name( 'twitter_url' ); ?>" type="text" value="<?php echo esc_attr( $twitter_url ); ?>">
+        </p>
+        <p>
+            <label for="<?php echo $this->get_field_id( 'instagram_url' ); ?>">Instagram URL:</label>
+            <input class="widefat" id="<?php echo $this->get_field_id( 'instagram_url' ); ?>" name="<?php echo $this->get_field_name( 'instagram_url' ); ?>" type="text" value="<?php echo esc_attr( $instagram_url ); ?>">
+        </p>
+        <?php
+    }
+
+    // Updating widget replacing old instances with new 
+    public function update( $new_instance, $old_instance ) {
+        $instance = array();
+        $instance['facebook_url'] = ( ! empty( $new_instance['facebook_url'] ) ) ? strip_tags( $new_instance['facebook_url'] ) : '';
+        $instance['youtube_url'] = ( ! empty( $new_instance['youtube_url'] ) ) ? strip_tags( $new_instance['youtube_url'] ) : '';
+        $instance['twitter_url'] = ( ! empty( $new_instance['twitter_url'] ) ) ? strip_tags( $new_instance['twitter_url'] ) : '';
+        $instance['instagram_url'] = ( ! empty( $new_instance['instagram_url'] ) ) ? strip_tags( $new_instance['instagram_url'] ) : '';
+        return $instance;
+    }
+}
+
+// Register and load the widget
+function load_social_icons_widget() {
+    register_widget( 'Social_Icons_Widget' );
+}
+add_action( 'widgets_init', 'load_social_icons_widget' );
