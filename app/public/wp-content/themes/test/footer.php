@@ -40,9 +40,9 @@
                             <div class="footer__widget-area">
                                 <?php
                                 // Check if the widget area is active
-                                // if ( is_active_sidebar( 'footer_widget_area' ) ) {
+                                if ( is_active_sidebar( 'footer_widget_area' ) ) {
                                     dynamic_sidebar( 'footer_widget_area' );
-                                // }
+                                }
                                 ?>
                             </div>
                         </div>

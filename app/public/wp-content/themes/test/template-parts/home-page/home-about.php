@@ -15,6 +15,7 @@
                     </h2> <!-- Output the 'about_note_title' within an h2 element -->
                     <span class="sec__head--title-arc"></span> <!-- Create a decorative span element -->
                 </div>
+               >
                 <div class="sec__head--headline">
                     <!-- Create a div for the section headline -->
                         
@@ -32,6 +33,7 @@
         style="background-image: url('<?php echo get_field('about_banner_background_image'); ?>')">
         <!-- Create a div for the background image with inline CSS -->
     </div>
+   
     <div class="container">
         <!-- Create a container div -->
         <div class="inner">
