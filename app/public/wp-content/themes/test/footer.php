@@ -29,13 +29,21 @@
                                     alt="">
                             </a>
                             <h6>Follow us</h6>
-                            <div class="footer__social--links">
+                            <!-- <div class="footer__social--links">
                                 <a href="https://www.facebook.com/ankragency/" class="fa-brands fa-square-facebook"></a>
                                 <a href="https://www.youtube.com/channel/UCWIU4WpYkcc1Sd3J-SLOi-Q"
                                     class="fa-brands fa-youtube"></a>
                                 <a href="https://twitter.com/ankragency" class="fa-brands fa-twitter"></a>
                                 <a href="https://www.instagram.com/ankragency/?hl=en"
                                     class="fa-brands fa-instagram"></a>
+                            </div> -->
+                            <div class="footer__widget-area">
+                                <?php
+                                // Check if the widget area is active
+                                // if ( is_active_sidebar( 'footer_widget_area' ) ) {
+                                    dynamic_sidebar( 'footer_widget_area' );
+                                // }
+                                ?>
                             </div>
                         </div>
                     </div>

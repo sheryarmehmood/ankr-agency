@@ -229,10 +229,10 @@ class Social_Icons_Widget extends WP_Widget {
         echo $args['before_widget'];
         ?>
         <div class="footer__social">
-            <a href="" class="footer__site--logo">
+            <!-- <a href="" class="footer__site--logo">
                 <img src="https://ankragency.com/wp-content/themes/urban_insight/assets/images/logo-white.png"
                     alt="">
-            </a>
+            </a> -->
             <!-- <h6>Follow us</h6> -->
             <div class="footer__social--links">
                 <a href="<?php echo esc_url( $instance['facebook_url'] ); ?>" class="fa-brands fa-square-facebook"></a>
@@ -283,8 +283,24 @@ class Social_Icons_Widget extends WP_Widget {
     }
 }
 
+
 // Register and load the widget
 function load_social_icons_widget() {
     register_widget( 'Social_Icons_Widget' );
 }
 add_action( 'widgets_init', 'load_social_icons_widget' );
+
+
+// Register Footer Widget Area
+function theme_register_footer_widget_area() {
+    register_sidebar( array(
+        'name'          => __( 'Footer Widget Area', 'theme-text-domain' ),
+        'id'            => 'footer_widget_area',
+        'description'   => __( 'Widgets added here will appear in the footer.', 'theme-text-domain' ),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2 class="widget-title">',
+        'after_title'   => '</h2>',
+    ) );
+}
+add_action( 'widgets_init', 'theme_register_footer_widget_area' );
