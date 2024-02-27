@@ -24,6 +24,7 @@
                 <div class="col-lg-8 single">
                     <div class="contact__us--form">
                         <h3>
+                        
                         <?php echo get_field('contact_us_form_heading'); ?> </h3>
 
                         <div class="wpcf7 no-js" id="wpcf7-f177-p5-o1" lang="en-US" dir="ltr">
@@ -33,7 +34,8 @@
                             </div>
                             <form action="/#wpcf7-f177-p5-o1" method="post" class="wpcf7-form init"
                                 aria-label="Contact form" novalidate="novalidate" data-status="init">
-                                <div style="display: none;">
+                                <?php echo do_shortcode('[contact-form-7 id="a4349bb" title="contact form ankr agency"]'); ?>
+                                <!-- <div style="display: none;">
                                     <input type="hidden" name="_wpcf7" value="177" />
                                     <input type="hidden" name="_wpcf7_version" value="5.8.1" />
                                     <input type="hidden" name="_wpcf7_locale" value="en_US" />
@@ -64,7 +66,7 @@
                                     <p><input class="wpcf7-form-control wpcf7-submit has-spinner btn"
                                             type="submit" value="Send" />
                                     </p>
-                                </div>
+                                </div> -->
                                 <div class="wpcf7-response-output" aria-hidden="true"></div>
                             </form>
                         </div>
