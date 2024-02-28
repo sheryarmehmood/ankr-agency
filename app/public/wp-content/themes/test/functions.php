@@ -300,7 +300,7 @@ function theme_register_footer_widget_area() {
         'before_widget' => '<div id="%1$s" class="widget %2$s">',
         'after_widget'  => '</div>',
         'before_title'  => '<h2 class="widget-title">',
-        'after_title'   => '</h2>',
+        'after_title'   => '</h2>',	
     ) );
 }
 add_action( 'widgets_init', 'theme_register_footer_widget_area' );

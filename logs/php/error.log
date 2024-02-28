@@ -144,3 +144,4 @@
 [27-Feb-2024 14:29:36 UTC] PHP Warning:  Undefined array key "twitter_url" in C:\Users\Hp\Local Sites\first-test-website\app\public\wp-content\themes\test\functions.php on line 240
 [27-Feb-2024 14:29:36 UTC] PHP Warning:  Undefined array key "instagram_url" in C:\Users\Hp\Local Sites\first-test-website\app\public\wp-content\themes\test\functions.php on line 241
 [27-Feb-2024 15:47:46 UTC] PHP Parse error:  syntax error, unexpected identifier "id", expecting "]" in C:\Users\Hp\Local Sites\first-test-website\app\public\wp-content\themes\test\template-parts\home-page\home-contact.php on line 27
+[27-Feb-2024 21:53:02 UTC] Cron reschedule event error for hook: wp_privacy_delete_old_export_files, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"hourly","args":[],"interval":3600}
