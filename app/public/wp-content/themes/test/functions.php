@@ -194,9 +194,9 @@ function ankr_agency_custom_blocks() {
 	if ( function_exists( 'acf_register_block' ) ) {
 		/* New redesign blocks*/
 		acf_register_block( array(
-			'name'            => 'hero-block',
-			'title'           => __( 'Hero block' ),
-			'description'     => __( 'FHRC Hero Section' ),
+			'name'            => 'about-block',
+			'title'           => __( 'About block' ),
+			'description'     => __( 'FHRC About Section' ),
 			'render_template' => '/template-parts/home-page/home-about.php',
 			'enqueue_assets'  => function () {
 				// assetEnqueue( 'home-hero-block-style', '/redesign/blocks/home-hero-block/home-hero-block.css', true, false );
@@ -204,7 +204,7 @@ function ankr_agency_custom_blocks() {
 			},
 			'category'        => 'blocks',
 			'icon'            => 'welcome-add-page',
-			'keywords'        => array( 'heroblock', 'hero', '' ),
+			'keywords'        => array( 'aboutblock', 'hero', '' ),
 			'multiple'        => true,
 			'mode'            => 'edit',
 		) );
